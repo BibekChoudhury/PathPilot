@@ -1,0 +1,380 @@
+[
+  {
+    "id": "diag_vec_comp_1",
+    "version": 1,
+    "skill_id": "vector_components",
+    "purpose": "diagnostic",
+    "stem": "A force vector of magnitude 10 N acts in the xy-plane at an angle of 30° above the positive x-axis. What are the horizontal (Fx) and vertical (Fy) components of this force? (Use cos 30° = √3/2 ≈ 0.866, sin 30° = 0.5)",
+    "options": [
+      {"id": "A", "text": "Fx = 5 N, Fy = 5√3 N (≈ 8.66 N)"},
+      {"id": "B", "text": "Fx = 5√3 N (≈ 8.66 N), Fy = 5 N"},
+      {"id": "C", "text": "Fx = -5√3 N, Fy = 5 N"},
+      {"id": "D", "text": "Fx = 10 N, Fy = 10 N"}
+    ],
+    "answer_key": "B",
+    "distractor_tags": {
+      "A": "cos/sin inversion",
+      "C": "component/sign confusion",
+      "D": "scalar projection confusion"
+    },
+    "explanation": "By definition of vector resolution with the angle θ measured from the positive x-axis: Fx = |F| * cos(θ) = 10 * cos(30°) = 5√3 N ≈ 8.66 N. Fy = |F| * sin(θ) = 10 * sin(30°) = 5 N. Both components are positive since the vector lies in the first quadrant.",
+    "reviewed_by": "Physics Content Review Team (Signoff: 2026-11-15)"
+  },
+  {
+    "id": "diag_vec_comp_2",
+    "version": 1,
+    "skill_id": "vector_components",
+    "purpose": "diagnostic",
+    "stem": "A displacement vector of magnitude 20 m lies in the second quadrant and makes an angle of 60° with the positive y-axis. What are its Cartesian components (Ax, Ay)?",
+    "options": [
+      {"id": "A", "text": "Ax = +10√3 m, Ay = +10 m"},
+      {"id": "B", "text": "Ax = -10 m, Ay = +10√3 m"},
+      {"id": "C", "text": "Ax = -10√3 m (≈ -17.32 m), Ay = +10 m"},
+      {"id": "D", "text": "Ax = -20 m, Ay = +20 m"}
+    ],
+    "answer_key": "C",
+    "distractor_tags": {
+      "A": "component/sign confusion",
+      "B": "cos/sin inversion",
+      "D": "scalar projection confusion"
+    },
+    "explanation": "Because the 60° angle is measured from the positive y-axis, the side adjacent to the y-axis is Ay = +20 * cos(60°) = +10 m. The side opposite to the y-axis corresponds to the x-direction: |Ax| = 20 * sin(60°) = 10√3 m. Because the vector is in the second quadrant (x < 0, y > 0), Ax = -10√3 m and Ay = +10 m.",
+    "reviewed_by": "Physics Content Review Team (Signoff: 2026-11-15)"
+  },
+  {
+    "id": "diag_vec_comp_3",
+    "version": 1,
+    "skill_id": "vector_components",
+    "purpose": "diagnostic",
+    "stem": "Given the vector V = -6 i + 8 j (in meters). What is the magnitude |V| and the counter-clockwise angle θ it forms with the positive x-axis?",
+    "options": [
+      {"id": "A", "text": "|V| = 10 m, θ ≈ 126.87°"},
+      {"id": "B", "text": "|V| = 10 m, θ ≈ 53.13°"},
+      {"id": "C", "text": "|V| = 14 m, θ ≈ 126.87°"},
+      {"id": "D", "text": "|V| = 10 m, θ ≈ -53.13°"}
+    ],
+    "answer_key": "A",
+    "distractor_tags": {
+      "B": "quadrant reference angle error",
+      "C": "scalar sum error",
+      "D": "component/sign confusion"
+    },
+    "explanation": "Magnitude |V| = √((-6)^2 + 8^2) = √(36 + 64) = √100 = 10 m. Since Vx = -6 < 0 and Vy = 8 > 0, the vector lies in the second quadrant. The reference angle α = arctan(|Vy/Vx|) = arctan(8/6) = arctan(4/3) ≈ 53.13°. Therefore, the angle with the positive x-axis is θ = 180° - 53.13° = 126.87°.",
+    "reviewed_by": "Physics Content Review Team (Signoff: 2026-11-15)"
+  },
+  {
+    "id": "diag_vec_add_1",
+    "version": 1,
+    "skill_id": "vector_addition",
+    "purpose": "diagnostic",
+    "stem": "Two forces act on a body: F1 = (3 i + 4 j) N and F2 = (5 i - 2 j) N. What is the net resultant force vector F_net?",
+    "options": [
+      {"id": "A", "text": "F_net = (8 i + 6 j) N"},
+      {"id": "B", "text": "F_net = (8 i + 2 j) N"},
+      {"id": "C", "text": "F_net = (2 i + 6 j) N"},
+      {"id": "D", "text": "F_net = 10 N"}
+    ],
+    "answer_key": "B",
+    "distractor_tags": {
+      "A": "component/sign confusion",
+      "C": "subtraction instead of addition",
+      "D": "scalar projection confusion"
+    },
+    "explanation": "Vectors are added component-by-component: F_net = (Fx1 + Fx2) i + (Fy1 + Fy2) j = (3 + 5) i + (4 + (-2)) j = (8 i + 2 j) N.",
+    "reviewed_by": "Physics Content Review Team (Signoff: 2026-11-15)"
+  },
+  {
+    "id": "diag_vec_add_2",
+    "version": 1,
+    "skill_id": "vector_addition",
+    "purpose": "diagnostic",
+    "stem": "Two vectors A and B, each of equal magnitude 10 units, act at an angle of 120° relative to each other. What is the magnitude of their resultant |R|?",
+    "options": [
+      {"id": "A", "text": "|R| = 20 units"},
+      {"id": "B", "text": "|R| = 0 units"},
+      {"id": "C", "text": "|R| = 14.14 units"},
+      {"id": "D", "text": "|R| = 10 units"}
+    ],
+    "answer_key": "D",
+    "distractor_tags": {
+      "A": "scalar addition without angles",
+      "B": "opposite direction confusion",
+      "C": "orthogonal assumption (90°)"
+    },
+    "explanation": "Using the law of cosines / parallelogram law: R = √(A^2 + B^2 + 2AB cos θ). Here A = 10, B = 10, and θ = 120°. Since cos(120°) = -0.5: R = √(100 + 100 + 2(10)(10)(-0.5)) = √(200 - 100) = √100 = 10 units.",
+    "reviewed_by": "Physics Content Review Team (Signoff: 2026-11-15)"
+  },
+  {
+    "id": "diag_vec_add_3",
+    "version": 1,
+    "skill_id": "vector_addition",
+    "purpose": "diagnostic",
+    "stem": "A motorboat heads directly across a river eastward with a velocity of 8 m/s relative to the water. The river flows due north with a velocity of 6 m/s. What is the resultant speed of the boat relative to the riverbank?",
+    "options": [
+      {"id": "A", "text": "14 m/s"},
+      {"id": "B", "text": "2 m/s"},
+      {"id": "C", "text": "10 m/s"},
+      {"id": "D", "text": "7 m/s"}
+    ],
+    "answer_key": "C",
+    "distractor_tags": {
+      "A": "scalar addition without angles",
+      "B": "collinear subtraction error",
+      "D": "arithmetic average confusion"
+    },
+    "explanation": "The velocity vectors are perpendicular: v_east = 8 i m/s and v_north = 6 j m/s. The resultant velocity is v = 8 i + 6 j. The speed is its magnitude: |v| = √(8^2 + 6^2) = √(64 + 36) = √100 = 10 m/s.",
+    "reviewed_by": "Physics Content Review Team (Signoff: 2026-11-15)"
+  },
+  {
+    "id": "diag_mot_1d_1",
+    "version": 1,
+    "skill_id": "constant_accel_1d",
+    "purpose": "diagnostic",
+    "stem": "A vehicle starts from rest (u = 0) and accelerates uniformly at 3 m/s² along a straight line for 4 seconds. What total distance does it cover during these 4 seconds?",
+    "options": [
+      {"id": "A", "text": "24 m"},
+      {"id": "B", "text": "12 m"},
+      {"id": "C", "text": "48 m"},
+      {"id": "D", "text": "36 m"}
+    ],
+    "answer_key": "A",
+    "distractor_tags": {
+      "B": "velocity-distance confusion (calculated v = at = 12 m/s)",
+      "C": "omitted 1/2 factor (calculated a*t^2)",
+      "D": "equation selection error"
+    },
+    "explanation": "Using kinematic equation s = ut + 0.5 * a * t^2. Since u = 0: s = 0 + 0.5 * 3 * (4)^2 = 0.5 * 3 * 16 = 24 meters.",
+    "reviewed_by": "Physics Content Review Team (Signoff: 2026-11-15)"
+  },
+  {
+    "id": "diag_mot_1d_2",
+    "version": 1,
+    "skill_id": "constant_accel_1d",
+    "purpose": "diagnostic",
+    "stem": "A ball is projected vertically upward from ground level with an initial speed of 20 m/s. Taking downward gravitational acceleration g = 10 m/s² and neglecting air resistance, what is the maximum height reached?",
+    "options": [
+      {"id": "A", "text": "40 m"},
+      {"id": "B", "text": "20 m"},
+      {"id": "C", "text": "10 m"},
+      {"id": "D", "text": "2 m"}
+    ],
+    "answer_key": "B",
+    "distractor_tags": {
+      "A": "omitted 2 in 2g denominator (u^2 / g)",
+      "C": "equation selection error (u / g)",
+      "D": "time to peak confusion (t = u/g = 2 s)"
+    },
+    "explanation": "At maximum height, vertical velocity v = 0. Using v^2 = u^2 - 2gh: 0 = 20^2 - 2(10)h => 20h = 400 => h = 20 meters.",
+    "reviewed_by": "Physics Content Review Team (Signoff: 2026-11-15)"
+  },
+  {
+    "id": "diag_mot_1d_3",
+    "version": 1,
+    "skill_id": "constant_accel_1d",
+    "purpose": "diagnostic",
+    "stem": "A car traveling at an initial velocity of 30 m/s applies brakes and comes to a complete halt over a distance of 45 m. Assuming uniform deceleration, what is the magnitude of the deceleration?",
+    "options": [
+      {"id": "A", "text": "15 m/s²"},
+      {"id": "B", "text": "5 m/s²"},
+      {"id": "C", "text": "20 m/s²"},
+      {"id": "D", "text": "10 m/s²"}
+    ],
+    "answer_key": "D",
+    "distractor_tags": {
+      "A": "equation selection error (u / s ratio)",
+      "B": "omitted 2 in 2as factor",
+      "C": "arithmetic error"
+    },
+    "explanation": "Using v^2 = u^2 + 2as. Final velocity v = 0, initial velocity u = 30 m/s, distance s = 45 m. 0 = (30)^2 + 2(a)(45) => 0 = 900 + 90a => 90a = -900 => a = -10 m/s². The magnitude of deceleration is 10 m/s².",
+    "reviewed_by": "Physics Content Review Team (Signoff: 2026-11-15)"
+  },
+  {
+    "id": "prac_vec_comp_1",
+    "version": 1,
+    "skill_id": "vector_components",
+    "purpose": "practice",
+    "stem": "A force vector of magnitude 50 N acts in the third quadrant at an angle of 37° below the negative x-axis. Given cos 37° ≈ 0.8 and sin 37° ≈ 0.6, what are its components (Fx, Fy)?",
+    "options": [
+      {"id": "A", "text": "Fx = +40 N, Fy = -30 N"},
+      {"id": "B", "text": "Fx = -30 N, Fy = -40 N"},
+      {"id": "C", "text": "Fx = -40 N, Fy = -30 N"},
+      {"id": "D", "text": "Fx = +40 N, Fy = +30 N"}
+    ],
+    "answer_key": "C",
+    "distractor_tags": {
+      "A": "component/sign confusion",
+      "B": "cos/sin inversion",
+      "D": "first quadrant sign assumption"
+    },
+    "explanation": "The vector lies in the third quadrant where both x and y components are negative. The angle 37° is adjacent to the negative x-axis, so |Fx| = 50 * cos(37°) = 50 * 0.8 = 40 N, and |Fy| = 50 * sin(37°) = 50 * 0.6 = 30 N. With quadrant signs: Fx = -40 N, Fy = -30 N.",
+    "reviewed_by": "Physics Content Review Team (Signoff: 2026-11-15)"
+  },
+  {
+    "id": "prac_vec_comp_2",
+    "version": 1,
+    "skill_id": "vector_components",
+    "purpose": "practice",
+    "stem": "An airplane flies with airspeed 200 km/h in the direction 45° North of East. What are its eastward (vx) and northward (vy) components?",
+    "options": [
+      {"id": "A", "text": "vx = 100√2 km/h (≈ 141.4 km/h), vy = 100√2 km/h"},
+      {"id": "B", "text": "vx = 200 km/h, vy = 200 km/h"},
+      {"id": "C", "text": "vx = 100 km/h, vy = 100 km/h"},
+      {"id": "D", "text": "vx = 0 km/h, vy = 200 km/h"}
+    ],
+    "answer_key": "A",
+    "distractor_tags": {
+      "B": "scalar projection confusion",
+      "C": "divided by 2 instead of √2",
+      "D": "cardinal direction confusion"
+    },
+    "explanation": "With θ = 45°: vx = 200 * cos(45°) = 200 * (1/√2) = 100√2 km/h ≈ 141.4 km/h. Similarly, vy = 200 * sin(45°) = 100√2 km/h.",
+    "reviewed_by": "Physics Content Review Team (Signoff: 2026-11-15)"
+  },
+  {
+    "id": "prac_vec_comp_3",
+    "version": 1,
+    "skill_id": "vector_components",
+    "purpose": "practice",
+    "stem": "A vector B has magnitude 12 units. Its x-component is Bx = -6√3 units and its y-component By is negative. What is the counter-clockwise angle θ of vector B with the positive x-axis?",
+    "options": [
+      {"id": "A", "text": "θ = 150°"},
+      {"id": "B", "text": "θ = 210°"},
+      {"id": "C", "text": "θ = 30°"},
+      {"id": "D", "text": "θ = 330°"}
+    ],
+    "answer_key": "B",
+    "distractor_tags": {
+      "A": "second quadrant confusion (ignored negative y)",
+      "C": "reference angle only",
+      "D": "fourth quadrant confusion"
+    },
+    "explanation": "cos(θ) = Bx / |B| = (-6√3) / 12 = -√3/2. This occurs at 150° (second quadrant) or 210° (third quadrant). Since By is given as negative, the vector must lie in the third quadrant, so θ = 210° (180° + 30°).",
+    "reviewed_by": "Physics Content Review Team (Signoff: 2026-11-15)"
+  },
+  {
+    "id": "prac_vec_add_1",
+    "version": 1,
+    "skill_id": "vector_addition",
+    "purpose": "practice",
+    "stem": "Three coplanar forces act on a small ring: F1 = (4 i - 3 j) N, F2 = (-2 i + 7 j) N, and F3 = (-2 i - 4 j) N. What is the magnitude of the net force |F_net|?",
+    "options": [
+      {"id": "A", "text": "8 N"},
+      {"id": "B", "text": "14 N"},
+      {"id": "C", "text": "2 N"},
+      {"id": "D", "text": "0 N (System is in equilibrium)"}
+    ],
+    "answer_key": "D",
+    "distractor_tags": {
+      "A": "component/sign confusion",
+      "B": "scalar addition of individual magnitudes",
+      "C": "arithmetic omission"
+    },
+    "explanation": "Add the components: Fx_net = 4 + (-2) + (-2) = 0 N. Fy_net = -3 + 7 + (-4) = 0 N. Therefore F_net = 0 i + 0 j, so |F_net| = 0 N.",
+    "reviewed_by": "Physics Content Review Team (Signoff: 2026-11-15)"
+  },
+  {
+    "id": "prac_vec_add_2",
+    "version": 1,
+    "skill_id": "vector_addition",
+    "purpose": "practice",
+    "stem": "Two perpendicular vectors P and Q have magnitudes 6 units and 8 units, where P lies along the positive x-axis and Q along the positive y-axis. What angle α does the resultant vector make with vector P?",
+    "options": [
+      {"id": "A", "text": "α = arctan(3/4) ≈ 36.87°"},
+      {"id": "B", "text": "α = arctan(4/3) ≈ 53.13°"},
+      {"id": "C", "text": "α = 45.00°"},
+      {"id": "D", "text": "α = 90.00°"}
+    ],
+    "answer_key": "B",
+    "distractor_tags": {
+      "A": "cos/sin or adjacent/opposite inverted ratio",
+      "C": "equal magnitude assumption",
+      "D": "orthogonal angle confusion"
+    },
+    "explanation": "The resultant is R = P i + Q j = 6 i + 8 j. The angle α with vector P (the x-axis) is given by tan(α) = Q / P = 8 / 6 = 4/3. Thus α = arctan(4/3) ≈ 53.13°.",
+    "reviewed_by": "Physics Content Review Team (Signoff: 2026-11-15)"
+  },
+  {
+    "id": "prac_vec_add_3",
+    "version": 1,
+    "skill_id": "vector_addition",
+    "purpose": "practice",
+    "stem": "Vector A = 5 i. What vector B must be added to vector A such that the resultant vector R has magnitude 5 and points along the positive y-axis (R = 5 j)?",
+    "options": [
+      {"id": "A", "text": "B = -5 i + 5 j"},
+      {"id": "B", "text": "B = 5 i + 5 j"},
+      {"id": "C", "text": "B = 5 j"},
+      {"id": "D", "text": "B = -5 i - 5 j"}
+    ],
+    "answer_key": "A",
+    "distractor_tags": {
+      "B": "sign error on cancellation component",
+      "C": "omitted cancellation of initial vector",
+      "D": "inverted y-component sign"
+    },
+    "explanation": "We need A + B = R => (5 i) + B = (5 j). Solving for B: B = 5 j - 5 i = -5 i + 5 j.",
+    "reviewed_by": "Physics Content Review Team (Signoff: 2026-11-15)"
+  },
+  {
+    "id": "prac_mot_1d_1",
+    "version": 1,
+    "skill_id": "constant_accel_1d",
+    "purpose": "practice",
+    "stem": "A rock is dropped from rest from the edge of a vertical cliff and strikes the ground 3.0 seconds later. Taking downward acceleration g = 9.8 m/s² and neglecting air drag, what is the height of the cliff?",
+    "options": [
+      {"id": "A", "text": "29.4 m"},
+      {"id": "B", "text": "88.2 m"},
+      {"id": "C", "text": "44.1 m"},
+      {"id": "D", "text": "14.7 m"}
+    ],
+    "answer_key": "C",
+    "distractor_tags": {
+      "A": "velocity-distance confusion (calculated v = gt = 29.4 m/s)",
+      "B": "omitted 1/2 factor (g*t^2)",
+      "D": "arithmetic division error"
+    },
+    "explanation": "For an object released from rest (u = 0): h = 0.5 * g * t^2 = 0.5 * 9.8 * (3)^2 = 4.9 * 9 = 44.1 meters.",
+    "reviewed_by": "Physics Content Review Team (Signoff: 2026-11-15)"
+  },
+  {
+    "id": "prac_mot_1d_2",
+    "version": 1,
+    "skill_id": "constant_accel_1d",
+    "purpose": "practice",
+    "stem": "A particle moves along a straight track with an initial velocity of 10 m/s. It accelerates uniformly at 2 m/s² over a displacement of 24 m. What is its final velocity?",
+    "options": [
+      {"id": "A", "text": "14 m/s"},
+      {"id": "B", "text": "12 m/s"},
+      {"id": "C", "text": "16 m/s"},
+      {"id": "D", "text": "24 m/s"}
+    ],
+    "answer_key": "A",
+    "distractor_tags": {
+      "B": "omitted 2 in 2as factor (v^2 = u^2 + as = 100 + 48 = 148 => ~12)",
+      "C": "arithmetic error in square root",
+      "D": "displacement value confusion"
+    },
+    "explanation": "Using v^2 = u^2 + 2as. Here u = 10 m/s, a = 2 m/s², s = 24 m. v^2 = (10)^2 + 2(2)(24) = 100 + 96 = 196. Therefore v = √196 = 14 m/s.",
+    "reviewed_by": "Physics Content Review Team (Signoff: 2026-11-15)"
+  },
+  {
+    "id": "prac_mot_1d_3",
+    "version": 1,
+    "skill_id": "constant_accel_1d",
+    "purpose": "practice",
+    "stem": "An object moves along the x-axis with an initial speed of 5 m/s. A constant retarding acceleration of magnitude 1 m/s² acts opposite to its motion. How long does it take for the object to come to an instantaneous stop?",
+    "options": [
+      {"id": "A", "text": "2.5 seconds"},
+      {"id": "B", "text": "10.0 seconds"},
+      {"id": "C", "text": "1.0 second"},
+      {"id": "D", "text": "5.0 seconds"}
+    ],
+    "answer_key": "D",
+    "distractor_tags": {
+      "A": "divided by 2 factor confusion",
+      "B": "multiplied instead of divided",
+      "C": "acceleration magnitude confusion"
+    },
+    "explanation": "Using v = u + at. Here initial velocity u = 5 m/s, final velocity v = 0 m/s, and acceleration a = -1 m/s². 0 = 5 - 1(t) => t = 5.0 seconds.",
+    "reviewed_by": "Physics Content Review Team (Signoff: 2026-11-15)"
+  }
+]

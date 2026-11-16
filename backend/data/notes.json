@@ -1,0 +1,53 @@
+[
+  {
+    "skill_id": "vector_components",
+    "title": "Vector Components & Decomposition - High Yield Guide",
+    "summary": "Vectors in a Cartesian coordinate system can be uniquely resolved into perpendicular components along the coordinate axes.",
+    "key_formulas": [
+      "Fx = |F| * cos(θ) (when θ is measured from the positive x-axis)",
+      "Fy = |F| * sin(θ) (when θ is measured from the positive x-axis)",
+      "|F| = √(Fx² + Fy²)",
+      "θ = arctan(|Fy / Fx|) adjusted for quadrant signs: Quadrant I (θ), II (180° - α), III (180° + α), IV (360° - α)"
+    ],
+    "common_pitfalls": [
+      "Always check which axis the angle θ is adjacent to. If the angle is measured from the vertical (y-axis), the components invert: Fy = F cos(θ) and Fx = F sin(θ).",
+      "Assign quadrant signs explicitly: Q1 (+,+), Q2 (-,+), Q3 (-,-), Q4 (+,-). Trigonometric functions alone may lose quadrant sign context if you only use acute reference angles."
+    ],
+    "worked_example": "A force of 20 N acts at 30° above the negative x-axis (Quadrant 2). Components: Fx = -20 * cos(30°) = -10√3 N ≈ -17.32 N. Fy = +20 * sin(30°) = +10 N."
+  },
+  {
+    "skill_id": "vector_addition",
+    "title": "Vector Addition & Resultants - High Yield Guide",
+    "summary": "Vectors must be combined using vector algebra, not simple arithmetic addition of magnitudes.",
+    "key_formulas": [
+      "Component-wise addition: Rx = Ax + Bx + Cx + ..., Ry = Ay + By + Cy + ...",
+      "Resultant magnitude: |R| = √(Rx² + Ry²)",
+      "Direction angle: α = arctan(Ry / Rx)",
+      "Parallelogram Law (2 vectors at angle θ): R = √(A² + B² + 2AB cos θ)"
+    ],
+    "common_pitfalls": [
+      "Do not add magnitudes directly unless vectors are strictly collinear in the same direction (θ = 0°).",
+      "Remember that cos(120°) = -0.5 and cos(180°) = -1. When two equal vectors of magnitude A act at 120°, their resultant magnitude is also A.",
+      "Perpendicular vectors (θ = 90°): R = √(A² + B²)."
+    ],
+    "worked_example": "Given A = 3i + 4j and B = 5i - 2j. Resultant R = A + B = (3+5)i + (4-2)j = 8i + 2j. Magnitude |R| = √(64 + 4) = √68 ≈ 8.25 units."
+  },
+  {
+    "skill_id": "constant_accel_1d",
+    "title": "1D Motion with Constant Acceleration - High Yield Guide",
+    "summary": "When acceleration is constant along a straight line, kinematic equations relate displacement (s), initial velocity (u), final velocity (v), acceleration (a), and time (t).",
+    "key_formulas": [
+      "v = u + at (no displacement s)",
+      "s = ut + 0.5 * a * t² (no final velocity v)",
+      "v² = u² + 2as (no time t)",
+      "s = ((u + v) / 2) * t (average velocity formulation for constant a)"
+    ],
+    "common_pitfalls": [
+      "Deceleration: acceleration vector is opposite to velocity. If moving along +x, deceleration means 'a' is negative.",
+      "Vertical motion under gravity: with upwards as positive, acceleration is a = -g (e.g. -9.8 m/s² or -10 m/s²). At maximum height, v = 0.",
+      "Always identify the missing variable among (u, v, a, s, t) to select the single direct kinematic equation."
+    ],
+    "worked_example": "A ball thrown upward with u = 20 m/s (g = 10 m/s²). Maximum height: v² = u² - 2gh => 0 = 400 - 20h => h = 20 m."
+  }
+]
+

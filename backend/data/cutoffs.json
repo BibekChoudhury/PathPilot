@@ -1,0 +1,68 @@
+{
+  "supported_cohorts": [
+    {
+      "key": "nitt_crl_open_os_2024",
+      "name": "NIT Tiruchirappalli (JoSAA 2024 Round 5)",
+      "exam": "JEE Main",
+      "rank_type": "CRL",
+      "year": 2024,
+      "round": 5,
+      "quota": "OS",
+      "seat_category": "OPEN",
+      "gender_pool": "Gender-Neutral",
+      "source_url": "https://static.collegedekho.com/media/django-summernote/2024-07-18/6829e64b-86f2-415e-93e2-9661bed006ac.pdf",
+      "retrieved_at": "2026-11-15",
+      "disclaimer": "Historical comparison only based on published JoSAA 2024 closing ranks. Seat allocations vary annually based on applicants, difficulty, and seat matrices. Not an admission probability, eligibility certification, or guarantee."
+    }
+  ],
+  "cutoff_rows": [
+    {
+      "id": "cutoff_nitt_cs_2024",
+      "cohort_key": "nitt_crl_open_os_2024",
+      "institution": "National Institute of Technology, Tiruchirappalli",
+      "program": "Computer Science and Engineering (4 Years, Bachelor of Technology)",
+      "year": 2024,
+      "round": 5,
+      "quota": "OS",
+      "seat_category": "OPEN",
+      "gender_pool": "Gender-Neutral",
+      "rank_type": "CRL",
+      "opening_rank": 299,
+      "closing_rank": 1224,
+      "source_url": "https://static.collegedekho.com/media/django-summernote/2024-07-18/6829e64b-86f2-415e-93e2-9661bed006ac.pdf",
+      "retrieved_at": "2026-11-15"
+    },
+    {
+      "id": "cutoff_nitt_ece_2024",
+      "cohort_key": "nitt_crl_open_os_2024",
+      "institution": "National Institute of Technology, Tiruchirappalli",
+      "program": "Electronics and Communication Engineering (4 Years, Bachelor of Technology)",
+      "year": 2024,
+      "round": 5,
+      "quota": "OS",
+      "seat_category": "OPEN",
+      "gender_pool": "Gender-Neutral",
+      "rank_type": "CRL",
+      "opening_rank": 917,
+      "closing_rank": 3546,
+      "source_url": "https://static.collegedekho.com/media/django-summernote/2024-07-18/6829e64b-86f2-415e-93e2-9661bed006ac.pdf",
+      "retrieved_at": "2026-11-15"
+    },
+    {
+      "id": "cutoff_nitt_eee_2024",
+      "cohort_key": "nitt_crl_open_os_2024",
+      "institution": "National Institute of Technology, Tiruchirappalli",
+      "program": "Electrical and Electronics Engineering (4 Years, Bachelor of Technology)",
+      "year": 2024,
+      "round": 5,
+      "quota": "OS",
+      "seat_category": "OPEN",
+      "gender_pool": "Gender-Neutral",
+      "rank_type": "CRL",
+      "opening_rank": 3029,
+      "closing_rank": 6040,
+      "source_url": "https://static.collegedekho.com/media/django-summernote/2024-07-18/6829e64b-86f2-415e-93e2-9661bed006ac.pdf",
+      "retrieved_at": "2026-11-15"
+    }
+  ]
+}

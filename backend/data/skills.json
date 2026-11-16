@@ -1,0 +1,27 @@
+[
+  {
+    "id": "vector_components",
+    "title": "Vector Components & Decomposition",
+    "description": "Resolving 2D vectors into orthogonal Cartesian components (x and y) using trigonometry and quadrant signs.",
+    "order": 1,
+    "prerequisites": [],
+    "estimated_recovery_mins": 25
+  },
+  {
+    "id": "vector_addition",
+    "title": "Vector Addition & Resultants",
+    "description": "Combining multiple vectors using component-wise addition, finding resultant magnitude and direction.",
+    "order": 2,
+    "prerequisites": ["vector_components"],
+    "estimated_recovery_mins": 25
+  },
+  {
+    "id": "constant_accel_1d",
+    "title": "1D Motion with Constant Acceleration",
+    "description": "Applying kinematic equations (v = u + at, s = ut + 0.5at^2, v^2 = u^2 + 2as) with proper signs for 1D motion.",
+    "order": 3,
+    "prerequisites": [],
+    "estimated_recovery_mins": 25
+  }
+]
+

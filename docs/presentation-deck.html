@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PathPilot - 9-Slide Competition Presentation Deck</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #090d16;
+      color: #f1f5f9;
+      overflow: hidden;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .slide-deck {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      position: relative;
+    }
+    .slide {
+      display: none;
+      width: 100%;
+      max-width: 1100px;
+      height: 640px;
+      background: #131b2e;
+      border: 1px solid #1e293b;
+      border-radius: 1.25rem;
+      padding: 3rem;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      flex-direction: column;
+      justify-content: space-between;
+      animation: fadeIn 0.3s ease-out forwards;
+    }
+    .slide.active { display: flex; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .badge-indigo { background: rgba(99, 102, 241, 0.2); color: #818cf8; border: 1px solid #6366f1; }
+    .badge-emerald { background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid #10b981; }
+    .badge-amber { background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid #f59e0b; }
+    h1 { font-size: 2.5rem; font-weight: 800; color: #fff; line-height: 1.2; margin-top: 0.5rem; }
+    h2 { font-size: 1.85rem; font-weight: 700; color: #fff; margin-bottom: 0.75rem; }
+    h3 { font-size: 1.2rem; font-weight: 600; color: #cbd5e1; margin-bottom: 0.5rem; }
+    p { font-size: 1rem; color: #94a3b8; line-height: 1.6; }
+    .grid { display: grid; gap: 1.5rem; }
+    .grid-2 { grid-template-columns: 1fr 1fr; }
+    .grid-3 { grid-template-columns: 1fr 1fr 1fr; }
+    .card {
+      background: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 0.75rem;
+      padding: 1.25rem;
+    }
+    code, pre {
+      font-family: 'JetBrains Mono', monospace;
+      background: #020617;
+      padding: 0.2rem 0.4rem;
+      border-radius: 0.35rem;
+      font-size: 0.85rem;
+      color: #38bdf8;
+    }
+    pre {
+      padding: 1rem;
+      overflow-x: auto;
+      border: 1px solid #1e293b;
+      line-height: 1.4;
+    }
+    .controls {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 3rem;
+      background: #0f172a;
+      border-top: 1px solid #1e293b;
+    }
+    .btn {
+      background: #334155;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1.25rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.875rem;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: #475569; }
+    .btn-primary { background: #6366f1; }
+    .btn-primary:hover { background: #4f46e5; }
+    .slide-counter { font-size: 0.875rem; color: #64748b; font-weight: 600; }
+    @page { size: 13.33in 7.5in; margin: 0; }
+    @media print {
+      body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .controls { display: none; }
+      .slide-deck { display: block; padding: 0; }
+      .slide { display: flex; width: 13.33in; max-width: none; height: 7.5in; min-height: 0;
+        margin: 0; border-radius: 0; box-shadow: none; break-after: page; break-inside: avoid; }
+      .slide:last-child { break-after: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="slide-deck">
+
+    <!-- Slide 1 -->
+    <div class="slide active" id="slide-1">
+      <div>
+        <span class="badge badge-indigo">Track 4: Smart AI Helpers for Student Learning</span>
+        <h1>PathPilot: Autonomous Student Recovery & Study Re-Planner</h1>
+        <p style="font-size: 1.25rem; color: #818cf8; margin-top: 0.5rem; font-weight: 500;">
+          Targeted Diagnostic Gaps • Verified Tool Actions • Grounded Recovery
+        </p>
+      </div>
+
+      <div class="card" style="border-left: 4px solid #6366f1; background: #0b1120;">
+        <h3 style="color: #fff;">The Core Problem in One Sentence</h3>
+        <p style="font-size: 1.1rem; color: #cbd5e1;">
+          "When competitive exam students encounter conceptual gaps and daily schedule disruptions, static syllabi fail to adapt—leading to abandoned study plans, hidden prerequisite misunderstandings, and compounding frustration."
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: #64748b;">
+        <span>PathPilot Submission • 15 November 2026</span>
+        <span>Built with React + TypeScript + FastAPI + SQLite</span>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide" id="slide-2">
+      <div>
+        <span class="badge badge-amber">Target Persona & Friction</span>
+        <h2>The Real-World Student Friction</h2>
+        <p>A JEE Main physics aspirant balancing practice with unpredictable daily time constraints.</p>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h3 style="color: #f87171;">What Happens Today (Static Apps)</h3>
+          <ul style="color: #94a3b8; font-size: 0.9rem; line-height: 1.8; margin-left: 1.25rem;">
+            <li>Generic advice: "Study more physics for 2 hours today."</li>
+            <li>Schedule debt: Missing yesterday adds tasks to an already impossible queue.</li>
+            <li>False precision: Displays arbitrary 87% mastery scores derived from small samples.</li>
+            <li>No execution: Conversational chat bots only offer text, not action.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 style="color: #34d399;">PathPilot's Dynamic Solution</h3>
+          <ul style="color: #94a3b8; font-size: 0.9rem; line-height: 1.8; margin-left: 1.25rem;">
+            <li>Diagnoses exact micro-skills: (e.g. Vector Components in Q2).</li>
+            <li>Adapts to actual minutes: Fits study tasks into a realistic 30-minute block.</li>
+            <li>Honest evidence: Reports "1 of 3 correct" with explicit sample caveats.</li>
+            <li>Action-taking agent: Re-plans and saves directly to the database.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="font-size: 0.85rem; color: #64748b;">Slide 2 of 9</div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide" id="slide-3">
+      <div>
+        <span class="badge badge-indigo">End-to-End Workflow</span>
+        <h2>The Verified Recovery Journey</h2>
+      </div>
+
+      <pre>
+1. Start Demo ────> 2. 9-Item Diagnostic ────> 3. Evidence & Misconceptions
+                             │                                │
+                             ▼                                ▼
+6. Fresh Retest <─── 5. Mentor Re-Plan   <──── 4. Deterministic Plan
+                             │
+                             ▼
+                 7. Historical Cutoff Tool</pre>
+
+      <div class="grid grid-3" style="font-size: 0.85rem;">
+        <div class="card">
+          <strong>1. Precise Diagnosis</strong>
+          <p style="font-size: 0.8rem; margin-top: 0.25rem;">3 micro-skills, 9 questions, cognitive distractor error tags.</p>
+        </div>
+        <div class="card">
+          <strong>2. Reversible Actions</strong>
+          <p style="font-size: 0.8rem; margin-top: 0.25rem;">"I only have 30 minutes" updates the saved plan atomically.</p>
+        </div>
+        <div class="card">
+          <strong>3. Fresh Retest</strong>
+          <p style="font-size: 0.8rem; margin-top: 0.25rem;">Subsequent practice updates separate evidence without bias.</p>
+        </div>
+      </div>
+
+      <div style="font-size: 0.85rem; color: #64748b;">Slide 3 of 9</div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide" id="slide-4">
+      <div>
+        <span class="badge badge-emerald">Pedagogical Rigor</span>
+        <h2>Diagnostic Grader & Cognitive Distractors</h2>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>3 Targeted Micro-Skills</h3>
+          <p style="font-size: 0.85rem; margin-bottom: 0.5rem;"><strong>1. Vector Components:</strong> Resolving Cartesian components, quadrant signs, axis references.</p>
+          <p style="font-size: 0.85rem; margin-bottom: 0.5rem;"><strong>2. Vector Addition:</strong> Component summation, resultant angle, parallelogram law.</p>
+          <p style="font-size: 0.85rem;"><strong>3. 1D Constant Acceleration:</strong> Kinematic equation selection, deceleration signs.</p>
+        </div>
+
+        <div class="card">
+          <h3>Distractor Tagging & Honest Bounds</h3>
+          <p style="font-size: 0.85rem; margin-bottom: 0.5rem;">Wrong choices are labeled with specific cognitive mistakes: <code>component/sign confusion</code>, <code>cos/sin inversion</code>, <code>velocity-distance confusion</code>.</p>
+          <p style="font-size: 0.85rem; color: #fbbf24;"><strong>Sample Size Transparency:</strong> Explicitly marked with: "Small sample (3 questions). Demonstrates immediate diagnostic pattern, not durable exam mastery."</p>
+        </div>
+      </div>
+
+      <div style="font-size: 0.85rem; color: #64748b;">Slide 4 of 9</div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide" id="slide-5">
+      <div>
+        <span class="badge badge-indigo">Genuine Agent Action</span>
+        <h2>Natural-Language Re-Planning in Action</h2>
+      </div>
+
+      <div class="card" style="background: #020617; border-color: #3b82f6;">
+        <span style="color: #93c5fd; font-size: 0.85rem;">Student Request:</span>
+        <p style="color: #fff; font-size: 1.1rem; font-weight: 600;">"I only have 30 minutes today."</p>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h3 style="color: #38bdf8;">Backend Tool Execution</h3>
+          <ul style="color: #94a3b8; font-size: 0.85rem; line-height: 1.7; margin-left: 1.25rem;">
+            <li>Calls allowlisted tool: <code>replan(available_minutes=30)</code></li>
+            <li>Optimistic lock: validates <code>expected_version: 1</code></li>
+            <li>Generates <strong>Plan Version 2</strong> atomically in SQLite WAL</li>
+            <li>Allocates 30 minutes: 10m learn + 15m practice + 5m review</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 style="color: #fbbf24;">Explicit Task Deferral</h3>
+          <ul style="color: #94a3b8; font-size: 0.85rem; line-height: 1.7; margin-left: 1.25rem;">
+            <li>Tasks exceeding 30 minutes moved to <code>deferred_tasks</code></li>
+            <li>No tasks are silently dropped or ignored</li>
+            <li>Task checkboxes preserve completion status across versions</li>
+            <li>Checking a task does <strong>not</strong> inflate assessment score</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="font-size: 0.85rem; color: #64748b;">Slide 5 of 9</div>
+    </div>
+
+    <!-- Slide 6 -->
+    <div class="slide" id="slide-6">
+      <div>
+        <span class="badge badge-emerald">Architecture</span>
+        <h2>Deterministic Code vs. AI Agent Roles</h2>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h3 style="color: #38bdf8;">Deterministic Engine (100% Reliable)</h3>
+          <ul style="color: #94a3b8; font-size: 0.85rem; line-height: 1.8; margin-left: 1.25rem;">
+            <li>Immediate server-side answer grading</li>
+            <li>Calculates exact minute budgets ($10 + 15 + 5 = 30$)</li>
+            <li>Session isolation & HttpOnly cookie hashing</li>
+            <li>Idempotency ledger prevents duplicate answer commits</li>
+            <li>Optimistic plan version conflict rejection (409 Conflict)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 style="color: #818cf8;">AI Mentor Layer (Constrained & Honest)</h3>
+          <ul style="color: #94a3b8; font-size: 0.85rem; line-height: 1.8; margin-left: 1.25rem;">
+            <li>Understands natural language requests</li>
+            <li>Restricted to 5 allowlisted service functions</li>
+            <li>Zero SQL, zero arbitrary code execution permissions</li>
+            <li><strong>Offline Fallback:</strong> If LLM API is unavailable, truthfully reports: <code>Mode: Deterministic Fallback</code></li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="font-size: 0.85rem; color: #64748b;">Slide 6 of 9</div>
+    </div>
+
+    <!-- Slide 7 -->
+    <div class="slide" id="slide-7">
+      <div>
+        <span class="badge badge-amber">Published Rank Data</span>
+        <h2>Historical JoSAA 2024 Cutoff Comparison</h2>
+      </div>
+
+      <div class="card">
+        <h3>Verified JoSAA 2024 Benchmark Cohort (Round 5)</h3>
+        <p style="font-size: 0.85rem; color: #cbd5e1; margin-bottom: 0.75rem;">
+          NIT Tiruchirappalli B.Tech programmes • OPEN Category • Gender-Neutral • Other State (OS) Quota • JEE Main CRL
+        </p>
+        <div class="grid grid-3" style="font-size: 0.85rem;">
+          <div style="background: #1e293b; padding: 0.75rem; border-radius: 0.5rem;">
+            <strong>NIT Trichy CSE</strong><br>
+            Opening: 299<br>
+            Closing: <strong>1,224</strong>
+          </div>
+          <div style="background: #1e293b; padding: 0.75rem; border-radius: 0.5rem;">
+            <strong>NIT Trichy ECE</strong><br>
+            Opening: 917<br>
+            Closing: <strong>3,546</strong>
+          </div>
+          <div style="background: #1e293b; padding: 0.75rem; border-radius: 0.5rem;">
+            <strong>NIT Trichy EEE</strong><br>
+            Opening: 3,029<br>
+            Closing: <strong>6,040</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="border-left: 4px solid #f59e0b;">
+        <strong style="color: #fbbf24;">Guardrails & Non-Predictive Disclaimer:</strong>
+        <p style="font-size: 0.8rem; color: #94a3b8; margin-top: 0.25rem;">
+          Incompatible rank types (e.g. Category ranks or JEE Advanced) are strictly rejected with HTTP 422. Cutoffs vary each year; this comparison is explicitly labeled as historical reference, not an admission guarantee or probability.
+        </p>
+      </div>
+
+      <div style="font-size: 0.85rem; color: #64748b;">Slide 7 of 9</div>
+    </div>
+
+    <!-- Slide 8 -->
+    <div class="slide" id="slide-8">
+      <div>
+        <span class="badge badge-emerald">Verification Gates</span>
+        <h2>API and Browser Verification</h2>
+      </div>
+
+      <div class="grid grid-2" style="font-size: 0.85rem;">
+        <div class="card">
+          <h3 style="color: #34d399;">API and browser checks</h3>
+          <ul style="color: #cbd5e1; line-height: 1.6; margin-left: 1.25rem;">
+            <li>✓ Gate 1: Full journey & reload persistence</li>
+            <li>✓ Gate 2: Idempotent answer duplicate prevention</li>
+            <li>✓ Gate 3: Cross-session access isolation (403/401)</li>
+            <li>✓ Gate 4: 30-min replan sum & version increment</li>
+            <li>✓ Gate 5: Task completion preserves quiz score</li>
+            <li>✓ Gate 6: Fresh practice updates separate evidence</li>
+            <li>✓ Gate 7: Mentor truthful fallback reporting</li>
+            <li>✓ Gate 8: Incompatible rank type rejection (422)</li>
+            <li>✓ Browser: 390px viewport and keyboard answer</li>
+            <li>✓ Gate 10: Single-process FastAPI + SPA serving</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 style="color: #38bdf8;">Test evidence</h3>
+          <div style="margin-top: 0.5rem; line-height: 1.8;">
+            <p>• <strong>14</strong> backend tests passed</p>
+            <p>• <strong>9</strong> automated acceptance checks passed</p>
+            <p>• Browser: reload, replan, practice and cutoff comparison</p>
+            <p>• Storage: Zero external dependencies (SQLite WAL)</p>
+          </div>
+          <div style="margin-top: 1rem; padding: 0.5rem; background: #020617; border-radius: 0.5rem;">
+            <span style="color: #94a3b8; font-size: 0.8rem;">Run command:</span>
+            <code style="display: block; margin-top: 0.25rem;">python -m backend.tests.run_acceptance_checks</code>
+          </div>
+        </div>
+      </div>
+
+      <div style="font-size: 0.85rem; color: #64748b;">Slide 8 of 9</div>
+    </div>
+
+    <!-- Slide 9 -->
+    <div class="slide" id="slide-9">
+      <div>
+        <span class="badge badge-indigo">Execution & Roadmap</span>
+        <h2>Deliverables & Next Milestones</h2>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h3 style="color: #fff;">Tonight's Delivered Artifacts</h3>
+          <ul style="color: #94a3b8; font-size: 0.85rem; line-height: 1.7; margin-left: 1.25rem;">
+            <li>1. Full working source code (FastAPI + React TS + SQLite).</li>
+            <li>2. Complete test suite (pytest + acceptance checks).</li>
+            <li>3. README.md with setup and run commands.</li>
+            <li>4. .env.example without secrets.</li>
+            <li>5. REVIEW_REPORT.md listing verified features and limits.</li>
+            <li>6. 9-slide presentation draft. Add submission links before exporting.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 style="color: #818cf8;">Post-Submission Roadmap</h3>
+          <ul style="color: #94a3b8; font-size: 0.85rem; line-height: 1.7; margin-left: 1.25rem;">
+            <li><strong>Weeks 1–2:</strong> Expand to 5 topic packs; introduce prerequisite DAG validation.</li>
+            <li><strong>Weeks 3–4:</strong> Durable LangGraph PostgreSQL checkpointer; multi-day recovery calendar.</li>
+            <li><strong>Weeks 5–6:</strong> Calibrated Beta-Binomial evidence tracking & pilot user trials.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; color: #64748b;">
+        <span>PathPilot • Track 4 Submission</span>
+        <span>Run: <code>python run.py</code> (serves on http://127.0.0.1:8000)</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Navigation Bar -->
+  <div class="controls">
+    <button class="btn" id="prevBtn" onclick="prevSlide()">← Previous</button>
+    <div class="slide-counter" id="counter">Slide 1 of 9</div>
+    <button class="btn btn-primary" id="nextBtn" onclick="nextSlide()">Next →</button>
+  </div>
+
+  <script>
+    let currentSlide = 1;
+    const totalSlides = 9;
+
+    function showSlide(n) {
+      document.querySelectorAll('.slide').forEach(s => s.classList.remove('active'));
+      const active = document.getElementById('slide-' + n);
+      if (active) active.classList.add('active');
+      document.getElementById('counter').innerText = 'Slide ' + n + ' of ' + totalSlides;
+      document.getElementById('prevBtn').disabled = (n === 1);
+      document.getElementById('nextBtn').disabled = (n === totalSlides);
+    }
+
+    function nextSlide() {
+      if (currentSlide < totalSlides) {
+        currentSlide++;
+        showSlide(currentSlide);
+      }
+    }
+
+    function prevSlide() {
+      if (currentSlide > 1) {
+        currentSlide--;
+        showSlide(currentSlide);
+      }
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'Enter') nextSlide();
+      else if (e.key === 'ArrowLeft') prevSlide();
+    });
+
+    showSlide(currentSlide);
+  </script>
+</body>
+</html>
+
